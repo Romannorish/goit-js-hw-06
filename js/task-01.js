@@ -1,17 +1,8 @@
-const ulEl = document.querySelector("#categories");
-console.log(ulEl);
+const categoryEl = document.querySelectorAll(".item");
 
-const liEl = document.querySelectorAll(".item");
+console.log('Number of categories:', categoryEl.length);
 
-console.log(liEl);
-
-liEl.forEach(() => {
-    console.log(liEl);
+categoryEl.forEach(categoryEl => {
+    console.log("Category:", categoryEl.firstElementChild.textContent);
+    console.log("Elements:", categoryEl.lastElementChild.children.length);
 });
-
-
-const title = document.querySelectorAll("h2");
-
-console.log(title[2]);
-
-
